@@ -15,5 +15,14 @@ No external libraries has been used neither other frameworks.
 
 ## Development Process
 
-- I started from the hardest part, almost for me. Understanding how it works the JS function "fetch(url)" and how to get all the info from the external service.  
+- I started from the hardest part, at least for me. Understanding how it works the JS function "fetch(url)" and how to get all the info from the external service.  
+- After that I wrote all the code to manipulate the DOM of the App and create all the elements  
+- At the end I edit the style of my project and test all the functionality
 
+## Link to the project
+
+You can easily see and test my project on the following link:
+
+:arrow_forward: [Netlify - Education Project | Online Library](...)
+
+**Hope you like it, enjoy!**
