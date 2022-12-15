@@ -1,0 +1,91 @@
+@media only screen and (max-width: 350px) {
+
+    #books{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
+
+@media only screen and
+(min-width: 351px) and
+(max-width: 600px) {
+
+    #books{
+        flex-direction: column;
+        padding: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1150px){
+
+    #books{
+        flex-direction: row;
+        padding: 80px 20px;
+    }
+}
+
+@media only screen and (min-width: 1151px) and (max-width: 1400px){
+
+    #books{
+        flex-direction: row;
+        padding: 80px 50px
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+    #bookContainer{
+        padding: 40px 0;
+    }
+
+    #intro button {
+        z-index: 2;
+        position: static;
+        margin-left: 5%;       
+    }
+
+    .back{
+        right: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    #searchBox h2{
+        margin: 0 2em 2em 1em;
+    }
+
+    .notFound{
+        top: 50%;
+    }
+
+    #modal{
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        overflow: scroll;
+        position: relative;
+    }
+
+    .cross{
+        position: fixed;
+        top: 25px;
+        left: 80%;
+        
+    }
+
+    .detail-1{
+        order: 1;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px){
+
+    #modal{
+        width: 85%;
+    }
+
+}

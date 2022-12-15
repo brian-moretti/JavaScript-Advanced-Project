@@ -1,0 +1,47 @@
+form{
+    margin: 0 0 5em 0
+}
+
+#category{
+    height: 36px;
+    border-radius: 12px;
+    width: 285px;
+    padding-left: 15px;
+    border: 1px solid $color-three;
+    font-size: 1em;
+    caret-color: $color-two;
+}
+
+#category:focus{
+    outline: 1.5px solid $color-three;
+}
+
+#inputBtn{
+    position: relative;
+    right: 35px;
+    top: 5px;
+    margin: auto;
+    padding: 10px;
+    border-top: 0.5px solid $color-three;
+    border-right: 0.5px solid $color-three;
+    border-bottom: 0.5px solid $color-three;
+    border-left: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: $color-three;
+}
+
+.fa-solid{
+    font-size: 25px;
+    color: $color-two;
+}
+
+#labelInput{
+    position: relative;
+    display: block;
+    top: -10px;
+    left: 5px;
+    visibility: hidden;
+    color: $color-one;
+    font-size: 1.2em;
+}
