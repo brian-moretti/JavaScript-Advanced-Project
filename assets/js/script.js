@@ -3,7 +3,7 @@
 const intro = document.getElementById("intro");
 
 let introPhrase = document.createElement("h2");
-    introPhrase.innerHTML = "\"La lettura è quell'isola dove approdano tutti i sognatori.\"";
+    introPhrase.innerHTML = "\"Reading is that island where all dreamers land.\"";
     intro.append(introPhrase);
 
 let btnIntro = document.createElement("button");
@@ -86,7 +86,6 @@ function showBooks(){
 
     back.innerHTML = `<i class="fa-solid fa-angles-left"></i>`;
     back.classList.add("back");
-    document.body.append(back);
 
     let category = lowerString(inputForm.value);
 
@@ -111,9 +110,13 @@ function showBooks(){
             </div>
             `
             result.innerHTML = books
+            result.append(back);
+
         }
     } else {
-        document.body.append(noFound);
+        result.innerHTML = "";
+        result.append(noFound, back);
+        result.style.display = "block";
         noFound.style.display = "block";
         noFound.innerHTML = "Ops, the category of books you are looking for doesn't exist." + "<br/>" + " Please go back to the \"Search Box\" and try other category."
     }
@@ -157,7 +160,7 @@ function showDetails(e){
     if(choosen.className != "singleBook") return
     chooseBook()
 
-    bookContainer.classList.add("no-overscroll");
+    modal.classList.add("no-overscroll");
 
     let keyBook = choosen.dataset.book;
 
@@ -204,3 +207,15 @@ closeBnt.addEventListener("click", () => {
         bookContainer.removeAttribute("hidden");
     }
 });
+
+document.addEventListener("keydown", (e) => {
+    if(e.key === "Escape"){
+        bookContainer.setAttribute("hidden", true)
+    }
+})
+
+bookContainer.addEventListener("click", e => {
+    if(e.target == bookContainer){
+        bookContainer.setAttribute("hidden", true)
+    }
+})

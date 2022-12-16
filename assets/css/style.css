@@ -10,7 +10,6 @@
 }
 
 body {
-  height: 100vh;
   background: rgb(20, 38, 70);
   background: linear-gradient(90deg, rgb(20, 38, 70) 0%, rgb(80, 83, 97) 50%, rgb(221, 166, 117) 100%);
 }
@@ -20,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -43,20 +42,21 @@ body {
 #intro h2 {
   /* position: relative;*/
   z-index: 1;
-  margin: 1% 5%;
+  margin: 7% 5% 0 5%;
   font-size: 2em;
   border-radius: 15px;
   border: 1px solid black;
   align-self: center;
   box-shadow: 0 0 200px 30px #f3f3f3 inset;
-  padding: 7% 15%;
+  padding: 4% 15%;
 }
 
 #intro button {
   z-index: 2;
-  position: absolute;
-  top: 55%;
-  left: 50%;
+  position: static;
+  /*     top: 55%;
+      left: 50%;
+   */
 }
 
 #btnIntro {
@@ -251,10 +251,12 @@ form {
   gap: 40px;
   padding: 5%;
   width: 70%;
+  height: 90%;
   margin: auto;
   background-color: #f3f3f3;
   border-radius: 10px;
   position: relative;
+  overflow: scroll;
 }
 
 .detail-1 h5 {
@@ -273,7 +275,8 @@ form {
 
 .detail-2 p {
   white-space: pre-wrap;
-  padding: 0 20px;
+  padding: 20px;
+  word-break: break-word;
 }
 
 .cross {
@@ -336,9 +339,6 @@ form {
   #modal {
     flex-direction: column;
     width: 90%;
-    height: 90%;
-    overflow: scroll;
-    position: relative;
   }
   .cross {
     position: fixed;
