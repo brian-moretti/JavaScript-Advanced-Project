@@ -1,6 +1,28 @@
+const main = document.getElementById("main");
+
+
+
+
+
+
+
+/*
 // CODE -> INTRO PAGE //
 
 const intro = document.getElementById("intro");
+
+
+function createElement(tag, innerText, attributeType, attributeName, appendTo){
+    let element = document.createElement(tag);
+    element.innerHTML = innerText;
+    element.setAttribute(attributeType, attributeName);
+    appendTo.append(element);
+    return element
+}
+
+let introPhrase = createElement("h2", "\"Reading is that island where all dreamers land.\"", null, null, intro)
+
+
 
 let introPhrase = document.createElement("h2");
     introPhrase.innerHTML = "\"Reading is that island where all dreamers land.\"";
@@ -92,7 +114,7 @@ function showBooks(){
     jsonFetch(`https://openlibrary.org/subjects/${category}.json`)
 
     /*fetch(`https://openlibrary.org/subjects/${category}.json`)
-    .then(response => response.json())*/
+    .then(response => response.json())
 
     .then(data => {
         console.log(data)
@@ -166,7 +188,7 @@ function showDetails(e){
 
     jsonFetch(`https://openlibrary.org${keyBook}.json`)
     /*fetch(`https://openlibrary.org${keyBook}.json`)
-    .then(response => response.json())*/
+    .then(response => response.json())
     .then(data => {
         titleBook.innerHTML = data.title;
 
@@ -179,7 +201,7 @@ function showDetails(e){
 
         jsonFetch(`https://openlibrary.org${data.authors[0].author.key}.json`)
         /*fetch(`https://openlibrary.org${data.authors[0].author.key}.json`)
-            .then(response => response.json())*/
+            .then(response => response.json())
             .then(data => {
                 authorBook.innerHTML = data.name
         })
@@ -219,3 +241,5 @@ bookContainer.addEventListener("click", e => {
         bookContainer.setAttribute("hidden", true)
     }
 })
+
+*/

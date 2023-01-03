@@ -14,104 +14,28 @@ body {
   background: linear-gradient(90deg, rgb(20, 38, 70) 0%, rgb(80, 83, 97) 50%, rgb(221, 166, 117) 100%);
 }
 
-#intro {
-  height: 100%;
+header {
+  margin: 8%;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: flex-start;
-  position: relative;
-}
-
-#intro::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.85;
-  background-image: url("/assets/images/intro.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-#intro h2 {
-  /* position: relative;*/
-  z-index: 1;
-  margin: 7% 5% 0 5%;
-  font-size: 2em;
-  border-radius: 15px;
-  border: 1px solid black;
-  align-self: center;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 0 200px 30px #f3f3f3 inset;
-  padding: 4% 15%;
+  border-radius: 15px;
+  padding: 2% 7.5%;
+}
+header img {
+  margin-right: 2%;
+}
+header h1 {
+  color: #142646;
+  padding: 0 1%;
+  font-size: 3.5em;
 }
 
-#intro button {
-  z-index: 2;
-  position: static;
-  /*     top: 55%;
-      left: 50%;
-   */
-}
-
-#btnIntro {
-  border-radius: 50%;
-  border: 0;
-  align-self: center;
-  box-shadow: black 0 0 0;
-  -webkit-animation-name: circle;
-          animation-name: circle;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  cursor: pointer;
-  padding: 15px;
-}
-@-webkit-keyframes circle {
-  from {
-    transform: scale(0.6, 0.6);
-    box-shadow: 0 0 0 1.5px black;
-  }
-  to {
-    transform: scale(0.9, 0.9);
-    box-shadow: 0 0 0 1px black;
-  }
-}
-@keyframes circle {
-  from {
-    transform: scale(0.6, 0.6);
-    box-shadow: 0 0 0 1.5px black;
-  }
-  to {
-    transform: scale(0.9, 0.9);
-    box-shadow: 0 0 0 1px black;
-  }
-}
-
-#searchBox {
-  display: none;
+main {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  flex-direction: column;
-  background: rgb(20, 38, 70);
-  background: radial-gradient(circle, rgb(20, 38, 70) 0%, rgb(80, 83, 97) 100%);
-}
-
-#searchBox h2 {
-  margin: 0 6em 2em 0;
-  font-size: 3em;
-  color: #DDA675;
 }
 
 form {
@@ -162,136 +86,245 @@ form {
   font-size: 1.2em;
 }
 
-#books {
-  display: none;
-  padding: 100px 180px;
-  gap: 30px 20px;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
-
-#books div {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
-  padding: 15px;
-  flex-basis: 32%;
-  flex-shrink: 3;
-  background-color: #f3f3f3;
-}
-
-#books div h2 {
-  margin: 1em 0;
-}
-
-#books div img {
-  height: 250px;
-}
-
-#books div h5 {
-  margin: 1em 0;
-}
-
-.back {
-  border: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background: none;
-  position: fixed;
-  top: 30px;
-  right: 90%;
-  cursor: pointer;
-}
-
-.back > i {
-  color: #f3f3f3;
-  font-size: 2.5em;
-}
-
-.back:hover {
-  transform: scale(1.5);
-}
-
-.no-overscroll {
-  overscroll-behavior-block: contain;
-}
-
-.notFound {
-  color: #142646;
-  padding: 2% 4%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  background-color: #f3f3f3;
-  border: 1.5px solid #f3f3f3;
-  border-radius: 12px;
-  box-shadow: 0 0 10px inset;
-}
-
-#bookContainer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 80px;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-#modal {
+footer {
   display: flex;
-  text-align: center;
-  gap: 40px;
-  padding: 5%;
-  width: 70%;
-  height: 90%;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 8vh;
   background-color: #f3f3f3;
-  border-radius: 10px;
-  position: relative;
-  overflow: scroll;
+  color: #142646;
 }
 
-.detail-1 h5 {
-  margin: 2em 0;
-  font-size: 1em;
+/* 
+// Default //
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
+  }
+
+  body {
+    background: rgb(20,38,70);
+    background: linear-gradient(90deg, rgba(20,38,70,1) 0%, rgba(80,83,97,1) 50%, rgba(221,166,117,1) 100%);
+
+  }
+
+// Intro Page //
+
+  #intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    position: relative;
 }
 
-.detail-2 {
-  text-align: justify;
+#intro::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background-image: url("/assets/images/intro.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
 }
 
-.detail-2 h2 {
-  margin-bottom: 1em;
-  text-align: center;
+#intro h2 {
+   /* position: relative;
+    z-index: 1;
+    margin: 7% 5% 0 5%;
+    font-size: 2em;
+    border-radius: 15px;
+    border: 1px solid black;
+    align-self: center;
+    box-shadow: 0 0 200px 30px $color-one inset;
+    padding: 4% 15%;
 }
 
-.detail-2 p {
-  white-space: pre-wrap;
-  padding: 20px;
-  word-break: break-word;
+#intro button {
+    z-index: 2;
+    position: static;
+/*     top: 55%;
+    left: 50%;
+
 }
 
-.cross {
-  color: black;
-  font-size: 3em;
-  position: absolute;
-  top: 0;
-  right: 15px;
+#btnIntro {
+    border-radius: 50%;
+    border: 0;
+    align-self: center;
+    box-shadow: black 0 0 0;
+    @include animation;
+    cursor: pointer;
+    padding: 15px;
+}
+
+// TEXTBOX //
+
+#searchBox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background: rgb(20,38,70);
+    background: radial-gradient(circle, rgba(20,38,70,1) 0%, rgba(80,83,97,1) 100%);
+}
+
+#searchBox h2{
+    margin: 0 6em 2em 0;
+    font-size: 3em;
+    color: $color-three;
+
+}
+
+@import "framework/form";
+
+// BOOKS RESULT //
+
+#books{
+    display: none;
+    padding: 100px 180px;
+    gap: 30px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#books div{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    flex-basis: 32%;
+    flex-shrink: 3;
+    background-color: $color-one;
+}
+
+#books div h2{
+    margin: 1em 0;
+}
+
+#books div img{
+    height: 250px;
+}
+
+#books div h5{
+    margin: 1em 0;
+}
+
+.back{
+    border: none;
+    width: fit-content;
+    background: none;
+    position: fixed;
+    top: 30px;
+    right: 90%;
+    cursor: pointer;
+}
+
+.back > i{
+    color: $color-one;
+    font-size: 2.5em;
+}
+
+.back:hover{
+    transform: scale(1.5);
+}
+
+.no-overscroll{
+    overscroll-behavior-block: contain;
+}
+
+.notFound{
+    color: $color-two;
+    padding: 2% 4%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    background-color: $color-one;
+    border: 1.5px solid $color-one;
+    border-radius: 12px;
+    box-shadow: 0 0 10px inset;
+}
+// POPUP CHOOSEN BOOK //
+
+#bookContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modal{
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    padding: 5%;
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    background-color: $color-one;
+    border-radius: 10px;
+    position: relative;
+    overflow: scroll;
+}
+
+.detail-1 h5{
+    margin: 2em 0;
+    font-size: 1em;
+}
+
+.detail-2{
+    text-align: justify;
+}
+
+.detail-2 h2{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.detail-2 p{
+    white-space: pre-wrap;
+    padding: 20px;
+    word-break: break-word;
+}
+
+ .cross{
+    color: black;
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 15px;
 }
 
 .cross:hover,
-.cross:focus {
-  cursor: pointer;
+.cross:focus{
+    cursor: pointer;
 }
-
+*/
 @media only screen and (max-width: 350px) {
   #books {
     flex-direction: column;
