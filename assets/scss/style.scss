@@ -13,8 +13,8 @@ body{
     background: linear-gradient(90deg, rgba(20,38,70,1) 0%, rgba(80,83,97,1) 50%, rgba(221,166,117,1) 100%);
 }
 
-header {
-    margin: 8%;
+#header {
+    margin: 6%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,25 +34,132 @@ header {
     }
 }
 
-main{
+#main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 @import "framework/form";
+
+
+#books{
+    display: none;
+    padding: 100px 180px;
+    gap: 30px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#books div{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    flex-basis: 32%;
+    flex-shrink: 3;
+    background-color: $color-one;
+}
+
+#books div h2{
+    margin: 1em 0;
+}
+
+#books div img{
+    height: 250px;
+}
+
+#books div h5{
+    margin: 1em 0;
+}
+
+#bookContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 80px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modal{
+    display: flex;
+    text-align: center;
+    gap: 40px;
+    padding: 5%;
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    background-color: $color-one;
+    border-radius: 10px;
+    position: relative;
+    overflow: scroll;
+}
+
+.detail-1 h5{
+    margin: 2em 0;
+    font-size: 1em;
+}
+
+.detail-2{
+    text-align: justify;
+}
+
+.detail-2 h2{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.detail-2 p{
+    white-space: pre-wrap;
+    padding: 20px;
+    word-break: break-word;
+}
+
+ .cross{
+    color: black;
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.cross:hover,
+.cross:focus{
+    cursor: pointer;
+}
+
+.no-overscroll{
+    overscroll-behavior-block: contain;
+}
 
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     background-color: $color-one;
+    color: $color-two;
+}
+
+#footerContainer{
+    display: inherit;
+    width: inherit;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer i{
+    font-size: 1.2em;
     color: $color-two;
 }
 /* 
