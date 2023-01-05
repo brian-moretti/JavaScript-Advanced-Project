@@ -4,7 +4,8 @@ I'm a student of Start2Impact Univeristy and this is my 3rd project made for the
 
 ## About the project
 
-The project consists the building of an App to boosts the reading of books using the external service [OpenLibrary](https://openlibrary.org/developers/api).  
+The project consists the building of an App to boosts the reading of books using the external service [OpenLibrary](https://openlibrary.org/developers/api).
+
 Starting with a "textbox", the user can search a specific category of a book. (one word or multi words)  
 The App will contact the API of OpenLibrary and shows a list of books selected from the category choosen.
 Clicking a book the App will show a box-modal with the cover, the author, the title and the description of the choosen book.
