@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("/assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf") format(truetype);
+  src: url("/assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf")
+    format(truetype);
 }
 * {
   padding: 0;
@@ -11,7 +12,12 @@
 
 body {
   background: rgb(20, 38, 70);
-  background: linear-gradient(90deg, rgb(20, 38, 70) 0%, rgb(80, 83, 97) 50%, rgb(221, 166, 117) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(20, 38, 70) 0%,
+    rgb(80, 83, 97) 50%,
+    rgb(221, 166, 117) 100%
+  );
 }
 
 #header {
@@ -49,13 +55,13 @@ body {
   border-radius: 12px;
   width: 400px;
   padding-left: 15px;
-  border: 1px solid #DDA675;
+  border: 1px solid #dda675;
   font-size: 1em;
   caret-color: #142646;
 }
 
 #category:focus {
-  outline: 1.5px solid #DDA675;
+  outline: 1.5px solid #dda675;
 }
 
 #inputBtn {
@@ -64,13 +70,13 @@ body {
   top: 4px;
   margin: auto;
   padding: 10px;
-  border-top: 0.5px solid #DDA675;
-  border-right: 0.5px solid #DDA675;
-  border-bottom: 0.5px solid #DDA675;
+  border-top: 0.5px solid #dda675;
+  border-right: 0.5px solid #dda675;
+  border-bottom: 0.5px solid #dda675;
   border-left: none;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #DDA675;
+  background-color: #dda675;
 }
 #inputBtn .fa-solid {
   font-size: 25px;
@@ -283,4 +289,4 @@ footer i {
   #modal {
     width: 85%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
