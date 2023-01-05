@@ -93,6 +93,10 @@ body {
   font-size: 1.2em;
 }
 
+#formContainer {
+  text-align: center;
+}
+
 #books {
   display: none;
   padding: 80px 160px;
@@ -288,5 +292,20 @@ footer i {
 @media only screen and (min-width: 601px) and (max-width: 800px) {
   #modal {
     width: 85%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #category {
+    max-width: 275px;
+    margin: auto;
+  }
+  footer {
+    height: auto;
+    font-size: 0.9em;
+  }
+  #footerContainer {
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
   }
 } /*# sourceMappingURL=style.css.map */
