@@ -41,6 +41,6 @@ No external libraries has been used neither other frameworks.
 
 You can easily see and test my project on the following link:
 
-:arrow_forward: [Netlify - Education Project | Online Library](https://book-camp.netlify.app/)
+:arrow_forward: [Netlify - Education Project | Online Library](https://the-book-camp.netlify.app/)
 
 **Hope you like it, enjoy!**
