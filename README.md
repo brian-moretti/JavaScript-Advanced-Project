@@ -7,7 +7,7 @@ I'm a student of Start2Impact Univeristy and this is my 3rd project made for the
 The project consists the building of an App to boosts the reading of books using the external service [OpenLibrary](https://openlibrary.org/developers/api).
 
 Starting with a "textbox", the user can search a specific category of a book. (one word or multi words)  
-The App will contact the API of OpenLibrary and shows a list of books selected from the category choosen.  
+The App will contact the API of OpenLibrary and shows a list of books selected from the category choosen.
 Clicking a book the App will show a box-modal with the cover, the author, the title and the description of the choosen book.
 
 ### - Build with
@@ -41,6 +41,6 @@ No external libraries has been used neither other frameworks.
 
 You can easily see and test my project on the following link:
 
-:arrow_forward: [Netlify - Education Project | Online Library](https://the-book-camp.netlify.app/)
+:arrow_forward: [Netlify - Education Project | Online Library](https://book-camp.netlify.app/)
 
 **Hope you like it, enjoy!**
