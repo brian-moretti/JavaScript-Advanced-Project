@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("/assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf")
-    format(truetype);
+  src: url("/assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf") format(truetype);
 }
 * {
   padding: 0;
@@ -12,12 +11,7 @@
 
 body {
   background: rgb(20, 38, 70);
-  background: linear-gradient(
-    90deg,
-    rgb(20, 38, 70) 0%,
-    rgb(80, 83, 97) 50%,
-    rgb(221, 166, 117) 100%
-  );
+  background: linear-gradient(90deg, rgb(20, 38, 70) 0%, rgb(80, 83, 97) 50%, rgb(221, 166, 117) 100%);
 }
 
 #header {
@@ -232,16 +226,30 @@ footer i {
   color: #142646;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (max-width: 350px) {
   #books {
     flex-direction: column;
     padding: 10px;
   }
+  #category {
+    width: 200px;
+  }
 }
 @media only screen and (min-width: 351px) and (max-width: 600px) {
   #books {
     flex-direction: column;
-    padding: 80px;
+    padding: 60px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #labelInput {
+    left: 0;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1150px) {
@@ -294,7 +302,7 @@ footer i {
     width: 85%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   #category {
     max-width: 275px;
     margin: auto;
@@ -307,5 +315,6 @@ footer i {
     flex-direction: column;
     gap: 10px;
     margin: auto;
+    text-align: center;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

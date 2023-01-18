@@ -3,12 +3,23 @@
     flex-direction: column;
     padding: 10px;
   }
+
+  #category {
+    width: 200px;
+  }
 }
 
 @media only screen and (min-width: 351px) and (max-width: 600px) {
   #books {
     flex-direction: column;
-    padding: 80px;
+    padding: 60px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #labelInput {
+    left: 0;
+    text-align: center;
   }
 }
 
@@ -73,7 +84,7 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
   #category {
     max-width: 275px;
     margin: auto;
@@ -86,5 +97,6 @@
     flex-direction: column;
     gap: 10px;
     margin: auto;
+    text-align: center;
   }
 }

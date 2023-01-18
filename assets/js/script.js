@@ -16,7 +16,11 @@ const formContainer = document.getElementById("formContainer");
 const form = createElement("form", "", formContainer, {
   id: "form",
   name: "searchBook",
-  onsubmit: "showBooks(); return false",
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  showBooks();
 });
 
 const label = createElement(
@@ -76,7 +80,7 @@ const identity = createElement(
   "h3",
   `Developed & Designed with 
     <i class="fa-solid fa-code"></i> and <i class="fa-solid fa-heart"></i> 
-    by Brian Moretti`,
+    by <a href="https://brian-moretti.github.io/" target="_blank">Brian Moretti</a>`,
   footerContainer
 );
 

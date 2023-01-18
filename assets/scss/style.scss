@@ -186,6 +186,11 @@ footer i {
   color: $color-two;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 // LAYOUTS //
 
 @import "layouts/all";

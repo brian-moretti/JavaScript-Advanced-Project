@@ -4,16 +4,18 @@
     format(truetype);
 }
 
+//! Tolta animazione
+
 @mixin animation {
   $name: circle;
 
   @keyframes #{$name} {
     from {
-      transform: /*rotate(0deg)*/ scale(0.6, 0.6);
+      transform: scale(0.6, 0.6);
       box-shadow: 0 0 0 1.5px black;
     }
     to {
-      transform: /*rotate(360deg)*/ scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
       box-shadow: 0 0 0 1px black;
     }
   }
@@ -24,3 +26,4 @@
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
