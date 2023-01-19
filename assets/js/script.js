@@ -1,4 +1,4 @@
-// VARIABLES //
+// Header Section
 
 const header = document.getElementById("header");
 
@@ -10,17 +10,14 @@ const logo = createElement("img", "", header, {
 
 const title = createElement("h1", "The Book Camp", header);
 
+// Main Section
+
 const main = document.getElementById("main");
 const formContainer = document.getElementById("formContainer");
 
 const form = createElement("form", "", formContainer, {
   id: "form",
   name: "searchBook",
-});
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  showBooks();
 });
 
 const label = createElement(
@@ -62,6 +59,8 @@ const button = createElement(
 const result = document.getElementById("books");
 const bookContainer = document.getElementById("bookContainer");
 
+// Footer Section
+
 const footer = document.getElementById("footer");
 const date = new Date();
 const footerContainer = createElement("div", "", footer, {
@@ -84,7 +83,7 @@ const identity = createElement(
   footerContainer
 );
 
-// FUNCTIONS //
+// Function for create an element
 
 function createElement(tag, text, appendTo, attributes) {
   let element = document.createElement(tag);
@@ -96,14 +95,20 @@ function createElement(tag, text, appendTo, attributes) {
   return element;
 }
 
+// Function for the input category research
+
 function searchString(string) {
   return string.toLowerCase().trim().split(" ").join("_");
 }
+
+// Function async for .json()
 
 async function jsonFetch(url) {
   const response = await fetch(url);
   return await response.json();
 }
+
+// Function that shows the category of books
 
 function showBooks() {
   let search = searchString(input.value);
@@ -146,13 +151,15 @@ function showBooks() {
     });
 }
 
+// Function that show a modal box for the choosen book
+
 function chooseBook() {
   if (bookContainer.hasAttribute("hidden")) {
     bookContainer.removeAttribute("hidden");
   }
 }
 
-result.addEventListener("click", details);
+// Function that show more details when a book is selected
 
 function details(e) {
   const choosen = e.target.closest("div");
@@ -223,9 +230,14 @@ function details(e) {
   });
 }
 
-function addEvent(element, eventType, eventFunct) {
-  element.addEventListener(eventType, eventFunct);
-}
+// Event Listener
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  showBooks();
+});
+
+result.addEventListener("click", details);
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
