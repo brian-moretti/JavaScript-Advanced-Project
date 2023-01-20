@@ -36,6 +36,7 @@ No external libraries has been used neither other frameworks.
  - Implemented *prettier* to make the code easier to read
  - Implemented *catch* and *finally* to handle different cases
  - Used Functions to simplify the creation of elements in the DOM
+ - Added ViteJS as bundler
 
 ## Link to the project
 

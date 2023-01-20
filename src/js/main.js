@@ -1,11 +1,12 @@
 import '../css/style.css'
+import imgHeader from '../images/favicon.svg'
 
 // Header Section
 
 const header = document.getElementById("header");
 
 const logo = createElement("img", "", header, {
-  src: "src/images/favicon.svg",
+  src: imgHeader,
   alt: "man reading a book",
   width: "100px",
 });
